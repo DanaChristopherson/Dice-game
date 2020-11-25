@@ -10,10 +10,10 @@ function rollTheDice() {
         document.querySelector(".computerscore").innerHTML = "";
 
         document.querySelector(".img1").setAttribute("src", 
-            "/images/dice-six-face-" + randomNumber1 + ".png"); 
+            "images/dice-six-face-" + randomNumber1 + ".png"); 
 
         document.querySelector(".img2").setAttribute("src", 
-            "/images/dice-six-face-" + randomNumber2 + ".png"); 
+            "images/dice-six-face-" + randomNumber2 + ".png"); 
 
         if (randomNumber1 === randomNumber2) { 
             document.querySelector("h1").innerHTML = "Draw!"; 
