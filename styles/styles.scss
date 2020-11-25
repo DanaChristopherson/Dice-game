@@ -1,0 +1,64 @@
+$background: #1f539c;
+$color: white;
+
+//use this properly
+@mixin button {
+    background: #55aa40; 
+    border-radius: 7px; 
+    color: $color; 
+    font-size: 30px; 
+    padding: 16px 25px 16px 25px; 
+    text-decoration: none; 
+    margin-bottom: .5em;
+}
+
+.butn {
+    @include button;
+}
+//down to here
+
+
+.container { 
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: $background;
+
+} 
+
+.dice { 
+    text-align: center; 
+    margin: .5em; 
+    display: inline-block;
+    
+} 
+
+body { 
+    background-color: $background; 
+
+} 
+
+h1 { 
+    margin: 30px; 
+    text-shadow: 5px 0 #232931; 
+    font-size: 4.5rem; 
+    color: $color; 
+    text-align: center; 
+} 
+
+h2 {
+    font-size: 2rem; 
+    color: $color;
+}
+
+p { 
+    font-size: 1.8rem; 
+    color: $color; ; 
+} 
+
+
+.butn:hover { 
+    background: #232931; 
+    text-decoration: none; 
+} 
+

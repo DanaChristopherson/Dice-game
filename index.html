@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project - Dice Game</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body> 
+	<div class="container"> 
+        <header>
+            <h1>Dice Game</h1> 
+        </header>
+
+
+
+		<div class="dice"> 
+			<p class="Player1 user">User</p> 
+            <img class="img1" src="/images/dice-six-face-6.png">
+        </div> 
+
+        <div class="dice"> 
+            <p class="Player2 computer">Computer</p> 
+            <img class="img2" src="/images/dice-six-face-6.png">  
+        </div> 
+
+
+		<div class="scoreboard">
+            <h2>Scoreboard</h2>
+            <p>
+                User Score: <span class="userscore"></span>
+            </p>
+            <p>
+                Computer Score: <span class="computerscore"></span>
+            </p>
+        </div> 
+	
+        <div> 
+            <button type="button" class="butn"
+                onClick="rollTheDice()"> 
+                Roll the Dice 
+            </button> 
+        </div> 
+ 
+
+    </div> 
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body> 
+</html> 
