@@ -1,4 +1,4 @@
-.butn {
+.button {
   background: #55aa40;
   border-radius: 7px;
   color: white;
@@ -43,7 +43,7 @@ p {
   color: white;
 }
 
-.butn:hover {
+.button:hover {
   background: #232931;
   text-decoration: none;
 }
