@@ -2,7 +2,7 @@ $background: #1f539c;
 $color: white;
 
 
-@mixin button {
+@mixin buttonstyle {
     background: #55aa40; 
     border-radius: 7px; 
     color: $color; 
@@ -13,7 +13,7 @@ $color: white;
 }
 
 .button {
-    @include button;
+    @include buttonstyle;
 }
 
 
@@ -29,12 +29,10 @@ $color: white;
     text-align: center; 
     margin: .5em; 
     display: inline-block;
-    
 } 
 
 body { 
     background-color: $background; 
-
 } 
 
 h1 { 
