@@ -1,11 +1,16 @@
 .button {
   background: #55aa40;
-  border-radius: 7px;
+  border-radius: 50px;
   color: white;
   font-size: 30px;
   padding: 16px 25px 16px 25px;
   text-decoration: none;
   margin-bottom: .5em;
+}
+
+.newGame {
+  background: #f7801f;
+  display: none;
 }
 
 .container {
@@ -17,7 +22,7 @@
 
 .dice {
   text-align: center;
-  margin: .5em;
+  margin: 3em;
   display: inline-block;
 }
 
@@ -41,6 +46,19 @@ h2 {
 p {
   font-size: 1.8rem;
   color: white;
+}
+
+.scoreboard {
+  color: white;
+  margin: auto;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
+  padding: .5em;
 }
 
 .button:hover {

@@ -20,23 +20,34 @@
 		<div class="dice"> 
 			<p class="user">User</p> 
             <img class="img1" src="images/dice-six-face-6.png">
+            <img class="img2" src="images/dice-six-face-6.png">
         </div> 
 
         <div class="dice"> 
             <p class="computer">Computer</p> 
-            <img class="img2" src="images/dice-six-face-6.png">  
+            <img class="img3" src="images/dice-six-face-6.png">  
+            <img class="img4" src="images/dice-six-face-6.png"> 
         </div> 
 
-
-		<div class="scoreboard">
-            <h2>Scoreboard</h2>
-            <p>
-                User Score: <span class="userscore"></span>
-            </p>
-            <p>
-                Computer Score: <span class="computerscore"></span>
-            </p>
-        </div> 
+        <div>
+            <table class="scoreboard">
+                <tr>
+                    <th></th>
+                    <th>User Score</th>
+                    <th>Computer Score</th>
+                </tr>
+                <tr>
+                    <th>Score this round:</th>
+                    <td class="userScore"></td>
+                    <td class="compScore"></td>
+                </tr>
+                <tr>
+                    <th>Total Score:</th>
+                    <td class="userTotal"></td>
+                    <td class="compTotal"></td>
+                </tr>
+            </table>
+        </div>
 	
         <div> 
             <button type="button" class="button"
@@ -45,9 +56,20 @@
             </button> 
         </div> 
  
+        <div> 
+            <button type="button" class="button newGame"
+                onClick="document.location.reload(true)"> 
+                New Game 
+            </button> 
+        </div> 
 
     </div> 
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/script.js"></script>
 </body> 
 </html> 
+
+
+<!-- // total score
+//total for each round
+//value of a die number? -->
