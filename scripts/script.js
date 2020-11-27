@@ -1,6 +1,8 @@
 let userTotal = 0;
 let compTotal = 0;
 
+let count = 0;
+
 
 function rollTheDice() { 
     setTimeout(function () { 
@@ -28,18 +30,6 @@ function rollTheDice() {
         document.querySelector(".img4").setAttribute("src", 
             "images/dice-six-face-" + randomNumber4 + ".png"); 
 
-        if (randomNumber1 === randomNumber2) { 
-            document.querySelector("h1").innerHTML = "Draw!"; 
-        } 
-
-        else if (randomNumber1 < randomNumber2) { 
-            document.querySelector("h1").innerHTML = ("Computer Wins!"); 
-        } 
-
-        else { 
-            document.querySelector("h1").innerHTML = (" User Wins!"); 
-        } 
-
         document.querySelector(".userScore").innerHTML = userScore;
         document.querySelector(".compScore").innerHTML = compScore;
         document.querySelector(".userTotal").innerHTML = userTotal;
@@ -51,8 +41,22 @@ function rollTheDice() {
 } 
 
 
-// function scoreboard() {
-
-
-
-// }
+function counter() {
+    setTimeout(function () {
+        count++;
+        if (count === 3){
+            if (userTotal === compTotal) { 
+                document.querySelector("h1").innerHTML = "Draw!"; 
+            } 
+        
+            else if (userTotal < compTotal) { 
+                document.querySelector("h1").innerHTML = ("Computer Wins!"); 
+            } 
+        
+            else { 
+                document.querySelector("h1").innerHTML = (" User Wins!"); 
+            } 
+            $(".rollDice").hide();
+        } 
+    }, 1000);
+}
