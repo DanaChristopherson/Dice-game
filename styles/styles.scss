@@ -26,12 +26,11 @@ $color: white;
     max-width: 80%;
     margin: auto;
     text-align: center;
-    background-color: $background;
 } 
 
 .dice { 
     text-align: center; 
-    margin: 3em; 
+    margin: 1em 3em 3em 3em; 
     display: inline-block;
 } 
 
@@ -40,7 +39,6 @@ body {
 } 
 
 h1 { 
-    margin: 30px; 
     text-shadow: 5px 0 #232931; 
     font-size: 4.5rem; 
     color: $color; 
@@ -75,3 +73,34 @@ table, th, td {
     background: #232931; 
     text-decoration: none; 
 } 
+
+
+.ruleContainer {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 2em;
+    color: $color;
+}
+
+li {
+    padding: 1em;
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.rules {
+    background: #5741d4; 
+    border-radius: 50px; 
+    color: $color; 
+    font-size: 1.5em; 
+    padding: .2em .4em .2em .4em; 
+    text-decoration: none; 
+}
+
+.ruleList {
+    display: none;
+}
